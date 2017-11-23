@@ -1,0 +1,16 @@
+Application is rather POC than actual production application:
+
+1) Symbol/company life-cycle (mergers/splits/bankruptcies) is not implemented
+
+2) List of Dow Jones Industrial Average (^DJI) is hardcoded, rather than taken from https://finance.yahoo.com/quote/%5EDJI/components?p=%5EDJI
+
+3) SQLite database was used for simplicity (for prod appliation should be more solid solution)
+
+4) 'estimated annual revenue', 'number of employees' are actually functions of time, but treated as value
+
+5) bugs exists, not fixed due to lack of time
+  5.1) in industry, company URL, phone number xpath needs corrections
+  5.2) zip code is loosing leading zeros
+
+6) xpath expressions were done quick and dirty, might be impprooved to be more robust
+
